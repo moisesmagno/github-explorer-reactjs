@@ -36,7 +36,7 @@ const Repository: React.FC = () => {
     const { params } = useRouteMatch<RepositoryParamas>();
 
     //Sempre que for array ou objeto criar uma interface.
-    const [ repository, setRepository ] = useState<Repository | null>(null );
+    const [ repository, setRepository ] = useState<Repository | null>(null);
     const [ issues, setIssues ] = useState<Issue[]>([]);
 
     useEffect(() => {
